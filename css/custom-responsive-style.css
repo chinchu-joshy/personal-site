@@ -6,17 +6,8 @@
 	#Banner {
 		width: 100%;
 	}
-	header {
-		background: #e64741; /* Old browsers */
-		position: fixed;
-		width: 100%;
-		padding: 20px;
-		z-index: 99999;
-	}
-	header .mobile-logo {
-		display: block;
-		width: 60px;
-	}
+	
+	
 	#Banner .logo {
 		display: none;
 	}
@@ -147,13 +138,7 @@
 		width: 100%;
 		height: 60vh;
 	}
-	header {
-		background: #e64741; /* Old browsers */
-		position: fixed;
-		width: 100%;
-		padding: 20px;
-		z-index: 99999;
-	}
+	
 	header .mobile-logo {
 		display: block;
 		width: 60px;
@@ -247,5 +232,38 @@
 	}
 	#Testimonials .testi-wrapper .each-testi {
 		width: 31%;
+	}
+}
+@media (max-width:892px){
+	.form{
+		width:100vw;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 3px 3px;
+	}
+	.footer .container{
+		width: 100%;
+	}
+	.card-sample{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	
+	
+}
+@media (max-width:318px){
+	
+	.each-work{
+		font-size:15px;
+		width: 300px;
+		padding: 0;
+	}
+	#OurWork .each-work{
+		width: 80%;
 	}
 }
