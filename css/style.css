@@ -54,18 +54,7 @@ ul, li {
   left: 16%;
   opacity: 0;
 }
-#Banner {
-	width: 0;
-	height: 100vh;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e64741+0,e6255d+100,7db9e8+100 */
-	background: #e64741; /* Old browsers */
-	background: -moz-linear-gradient(top, #e64741 0%, #e6255d 100%, #7db9e8 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #e64741 0%,#e6255d 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #e64741 0%,#e6255d 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64741', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-	overflow: hidden;
-	position: relative;
-}
+
 
 .intro-left h1{
   color:#31b180;
@@ -162,61 +151,7 @@ bottom: 15%;
 .banner .col{
   height:max-content;
 }
-/* body.active #Banner .logo {
-	opacity: 1;
-	top: 47%;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition-delay: 0.5s;
-	transition-delay: 0.5s;
-	-ms-transition-delay: 0.5s;
-}
-body.active #Banner  {
-	width: 100%;
-	transition:  ease-in-out all 0.5s;
-}
-body.active #Banner .blacksection::before  {
-	height: 2000px;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition-delay: 1s;
-	transition-delay: 1s;
-	-ms-transition-delay: 1s;
-}
-body.active #Banner h1  {
-	opacity: 1;
-	right: 15%;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition-delay: 1.5s;
-	transition-delay: 1.5s;
-	-ms-transition-delay: 1.5s;
-}
-#Banner h1 {
-	color: #fff;
-	font-size: 80px;
-	font-family: 'Futura PT book';
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-  right: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  opacity: 0;
-}
-#Banner .blacksection::before {
-  width: 2000px;
-  height: 0;
-  background-color: #000;
-  position: absolute;
-  right: -1000px;
-  transform: rotate(124deg);
-  -ms-transform: rotate(124deg);
-  content: "";
-  top: 0;
-} */
+
 .mscroll {
 	opacity: 0;
 	position: absolute;
@@ -762,6 +697,7 @@ body.active .mscroll {
   justify-content: center;
   margin:10%;
   min-height: 100vh;
+  
 }
 .footer .container{
   background-color: #fff;
@@ -770,25 +706,31 @@ body.active .mscroll {
   width: 60%;
   max-width: 100%;
   overflow: hidden;
+  background-color:black;
 
 }
 .footer .header{
-  background-color: #f7f7f7;
+  background-color: black;
   padding: 5% 5%;
-  border-bottom: 1px solid #f0f0f0;
+ 
+  
 
 }
 .footer .header h2{
   margin: 0;
-  color: black;
+  color: white;
 }
 .form{
   padding: 30px 35px;
+ 
 }
 .form-control{
   padding-bottom:4%;
   margin-bottom: 2%;
   position: relative;
+  background-color: rgb(5, 4, 4);
+  color: white;
+  border: none;
 }
 .form-control label{
   display: inline-block;
@@ -796,13 +738,14 @@ body.active .mscroll {
 }
 .form-control input{
   border-radius: 1em;
-  border :2px solid black;
+  border :.2px solid black;
   display: block;
   margin: 1%;
   width: 100%;
   height: max-content;
   padding: 2%;
   font-family: inherit;
+  background-color: rgb(185, 184, 184);
 
 }
 .form-control.succes input{
