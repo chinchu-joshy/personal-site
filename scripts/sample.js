@@ -40,7 +40,7 @@ function checkSubmit(){
     }
 
 
-    if(passwordValue!==password2Value){
+    if(passwordValue!=password2Value){
         setError(password2,"Password is not matching");
     }
     else{
