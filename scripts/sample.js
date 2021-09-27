@@ -51,11 +51,13 @@ function setError(userinput,message){
     const formControl=userinput.parentElement;
     const small=formControl.querySelector('small');
     small.innerText=message;
-    formControl.className='form-control error'
+    formControl.className='form-control error';
+   
 }
 function setSucces(userinput){
     const formControl=userinput.parentElement;
     formControl.className='form-control succes'
+    
 }
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
