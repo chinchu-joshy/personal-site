@@ -3,9 +3,22 @@ const email=document.getElementById('email');
 const password=document.getElementById('password');
 const password2=document.getElementById('password2');
 const username=document.getElementById('username');
+
 form.addEventListener('submit',(e)=>{
-e.preventDefault();
+   var flag=0; 
+
 checkSubmit();
+if(flag>0){
+    // const butn=document.getElementById('button')
+    // butn.disabled=true;
+    // e.preventDefault();
+    
+}
+else{
+    e.preventDefault();
+}
+
+
 })
 function checkSubmit(){
     const usernameValue=username.value.trim();
@@ -15,6 +28,7 @@ function checkSubmit(){
     console.log(usernameValue);
     if(usernameValue==''){
         setError(username,"Enter the username");
+        flag++;
     }
     else{
         setSucces(username);
@@ -23,9 +37,11 @@ function checkSubmit(){
 
     if(emailValue==''){
         setError(email,"Enter the email");
+        flag++;
     }
     else if(!validateEmail(emailValue)){
         setError(email,"Enter a valid email");
+        flag++;
     }
     else{
         setSucces(email);
@@ -34,6 +50,7 @@ function checkSubmit(){
 
     if(passwordValue==''){
         setError(password,"Enter the password");
+        flag++;
     }
     else{
         setSucces(password);
@@ -42,6 +59,7 @@ function checkSubmit(){
 
     if(passwordValue!=password2Value){
         setError(password2,"Password is not matching");
+        flag++;
     }
     else{
         setSucces(password2);
