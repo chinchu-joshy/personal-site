@@ -6,24 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- favicons -->
-<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
 <!-- favicons -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
-
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <body>
   <header>
@@ -265,43 +253,45 @@
 </section>
 <section class="footer " id="connect">
   <div class="container">
-    <div class="header">
-      <h2>Contact me</h2>
-      </div>
-      <form class="form col-12" id="form" >
-        <div class="form-control ">
-          <label for="">Enter your name</label>
-          <input type="text" placeholder="name" id="username">
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation"></i>
-          <small>Error</small>
-        </div>
-        <div class="form-control ">
-          <label for="">Enter your email</label>
-          <input type="" placeholder="email" id="email">
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation"></i>
-          <small>Error</small>
-        </div>
-        <div class="form-control">
-          <label for="">Enter Password</label>
-          <input type="password" placeholder="password" id="password">
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation"></i>
-          <small>Error</small>
-        </div>
-        <div class="form-control">
-          <label for="">Conform password</label>
-          <input type="password" placeholder="password" id="password2">
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation"></i>
-          <small>Error</small>
-        </div>
-        <textarea class="mb-2" name="" id="textarea" cols="30" rows="2" placeholder="Enter your message"></textarea>
-        <button id="button" type="submit">Submit</button>
-      </form>
+    <h1 class="register">
+        Register
+    </h1>
+    <form id="registration_form" method="POST" action="https://script.google.com/macros/s/AKfycbxh1UFbRstD3NTxTedL0QJkSXlsaoK15hbS7tkzadW2O0G-n1ov8jI0tyzgm9iXMIW-Vw/exec">
+   
+    <div>
+     
+     <input type="text" id="form_sname" placeholder="name" name="lastname">
+     <!-- <label for="">Second name</label> -->
+     <span class="error_form" id="sname_error_message"></span>
+ </div>
+ <div>
     
-  </div>
+     <input type="email" id="form_email" name="emal" placeholder="email">
+     <!-- <label for="">Email</label> -->
+     <span class="error_form" id="email_error_message"></span>
+     
+ </div>
+ <div>
+     
+     <input type="password" id="form_password" placeholder="password" >
+     <!-- <label for="">Password</label> -->
+     <span class="error_form" id="password_error_message"></span>
+ </div>
+ <div>
+     
+     <input type="password"  id="form_retype_password" placeholder="conform password">
+     <!-- <label for="">Re-enter Password</label> -->
+     <span class="error_form" id="retype_password_error_message"></span>
+ </div>
+ <div>
+     
+     <input type="text"  id="text" placeholder="enter message" name="message"> 
+     <!-- <label for="">Re-enter Password</label> -->
+     
+ </div>
+ <input id="button" type="submit" value="Register" name="">
+</form>
+</div>
 </section>
 <footer id="Contact">
   <div class="container">
@@ -312,6 +302,7 @@
 </footer>
  <div class="copyright"><p>Copyrights 2011-2018</p>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="scripts/plugin-active.js"></script>
 <script src="scripts/sample.js"></script>
